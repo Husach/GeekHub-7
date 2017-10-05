@@ -1,0 +1,61 @@
+table {
+	margin: 0 auto;
+}
+
+.first {
+	border: 1px outset grey;
+	border-spacing: 3px;
+}
+.first th {
+	padding: 5px 15px;	
+	border: 1px inset grey;
+}
+.first td {
+	padding: 5px;
+	border: 1px inset grey;
+}
+.long {
+	width: 250px;
+}
+
+.second {
+	width: 600px;
+	border: 1px outset grey;
+}
+.second th {
+	padding: 5px;
+	border: 1px inset grey;
+}
+.second td {
+	padding: 5px;
+	border: 1px inset grey;
+}
+.term {
+	width: 200px;
+}
+.norm {
+	width: 150px;
+}
+.year {
+	width: 70px;
+}
+.cult {
+	font-weight: bold;
+	width: 50px;
+}
+
+.third {
+	width: 600px;
+	border-spacing: 0;
+	border: 1px outset grey;
+}
+.third th {
+	padding: 5px;
+	text-align: left;
+	border: 1px inset grey;
+}
+.third td {
+	padding: 5px;
+	border: 1px inset grey;
+	vertical-align: top;
+}
