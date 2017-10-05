@@ -59,3 +59,28 @@ table {
 	border: 1px inset grey;
 	vertical-align: top;
 }
+
+h1 {
+	text-align: center;
+}
+form {
+	padding: 20px 10px;
+	width: 750px;
+	margin: 0 auto;
+}
+input {
+	margin: 10px 0;
+}
+input[name="age"] {
+	width: 50px;
+}
+.routine,
+.choose,
+.books,
+.comments {
+	font-weight: bold;
+}
+textarea[name="comments"] {
+	width: 400px;
+	height: 200px;
+}
