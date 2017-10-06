@@ -74,13 +74,16 @@ input {
 input[name="age"] {
 	width: 50px;
 }
-.routine,
-.choose,
-.books,
-.comments {
+fieldset {
+	margin-bottom: 20px;
+}
+.bold {
 	font-weight: bold;
 }
 textarea[name="comments"] {
 	width: 400px;
 	height: 200px;
+}
+#special {
+	width: 250px;
 }
