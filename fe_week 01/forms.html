@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+	<head>
+	  <meta charset="utf-8">
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <title>forms</title>
+	</head>
+
+	<body>	
+		<h1>Урок "Формы": теги и их атрибуты.</h1>
+			
+		<form action="#" method="get">
+			<fieldset>
+				<legend class="bold">Коротко о себе</legend>
+				<label for="name">Имя: </label>
+				<input type="text" name="name" id="name" placeholder="Введите своё имя"> <br>
+				<label for="surname">Фамилия: </label>
+				<input type="text" name="surname" id="surname" placeholder="Введите свою фамилию"> <br>
+				<label for="state">Пол:</label>
+				<label>
+					<input type="radio" name="state" id="state" checked> мужской
+				</label>
+				<label>
+					<input type="radio" name="state" id="state"> женский
+				</label> <br>
+				<label for="age">Возраст: </label>
+				<input type="number" name="age" id="age"><span> лет</span>
+			</fieldset>
+
+			<fieldset>
+				<legend class="bold">Подробно о себе</legend>
+				<label>
+					<input type="radio" name="states" value="male" checked> Молодой человек
+				</label> <br>
+				<label>
+					<input type="radio" name="states" value="female"> Девушка
+				</label> <br>
+				<input type="date" name="birhtdate" id="birhtdate">
+				<label for="birhtdate">Дата рождения</label> <br>
+				<input type="text" name="marital" id="marital">
+				<label for="marital">Семейное положение</label> <br>
+				<input type="text" name="status" id="status">
+				<label for="status">Социальный статус</label> <br>
+				<input type="text" name="marital" id="marital">
+				<label for="marital">Местожительство</label> <br>
+				
+				<label for="routine" class="routine bold">Что вы обычно делаете на выходных:</label> <br>
+				<input type="checkbox" name="routine" value="sleep"> Сплю <br>
+				<input type="checkbox" name="routine" value="go walk"> Гуляю с друзьями <br>
+				<input type="checkbox" name="routine" value="go work"> Хожу на рыбалку <br>
+				<input type="checkbox" name="routine" value="playing"> Играю в игры <br>
+
+				<label for="choose" class="choose bold">Рассказать о формах в книге, посвещенной HTML:</label> <br>
+				<select>
+					<option value="1">Site frequency:</option>
+					<option value="2">item2</option>
+					<option value="3">item3</option>
+				</select> <br>
+
+				<label for="books" class="books bold">Сколько книг Вы прочитали за свою жизнь:</label> <br>
+				<label>
+					<input type="radio" name="books" id="books" value="0-10"> 0-10
+				</label> <br>
+				<label>
+					<input type="radio" name="books" id="books" value="11-20"> 11-20
+				</label> <br>
+				<label>
+					<input type="radio" name="books" id="books" value="21-50"> 21-50
+				</label> <br>
+				<label>
+					<input type="radio" name="books" id="books" value="50+"> 50+
+				</label> <br>
+
+				<label for="comments" class="comments bold">Bаши комментарии:</label> <br>
+				<textarea name="comments"></textarea> <br>
+				
+				<label for="pos" class="pos"></label>
+				<select multiple>
+					<option value="1">Первая позиция</option>
+					<option value="2" selected>Вторая позиция</option>
+					<option value="3">Третья позиция</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend class="bold">И в заключении</legend>
+				<input type="text" name="special" id="special" placeholder="Это поле было введено до Вас"> <br>
+				<label for="email" class="special bold">Email: </label> <br>
+				<input type="email" name="email" id="email"> <br>
+
+				<label for="subscribe" class="subscribe bold">Хотите подписаться на самуюю модную рассылку спама?</label>
+				<p class="italic">Выберите категорию</p>
+				<input type="checkbox" name="subscribe" value="equipment"> Оборудование <br>
+				<input type="checkbox" name="subscribe" value="dinner"> Как приготовить обеды <br>
+				<input type="checkbox" name="subscribe" value="million"> Заработай миллион за два дня! <br>
+
+				<label for="level" class="level bold">На сколько сложная задача:</label> <br>
+				<label>
+					<input type="radio" name="level" checked> Совсем нет
+				</label> <br>
+				<label>
+					<input type="radio" name="level"> Так себе
+				</label> <br>
+				<label>
+					<input type="radio" name="level"> Еле справились
+				</label> <br>
+			</fieldset>
+
+			<input type="submit" name="submit" value="Отправить">
+
+		</form>
+
+	</body>
+
+</html>
