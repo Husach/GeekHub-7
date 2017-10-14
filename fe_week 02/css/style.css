@@ -83,6 +83,7 @@ body, p, h1, h2, h3, ul, li, a {
 	line-height: 35px;
 	color: #2c3e50;
 	padding-top: 260px;
+	padding-bottom: 15px;
 }
 .col__title:before {
 	content: '';
@@ -94,6 +95,13 @@ body, p, h1, h2, h3, ul, li, a {
 	border-radius: 50%;
 	background-color: white;
 	box-shadow: 0.5px 0.9px 0 1px rgba(155, 155, 155, 0.3);
+}
+.col__text {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #2c3e50;
+	text-transform: none;
 }
 .list {
 	display: -webkit-flex;
@@ -113,14 +121,15 @@ body, p, h1, h2, h3, ul, li, a {
   font-family: 'Raleway', sans-serif;
   background: #3498db;
 }
-.logo {
-	padding: 55px 0;
+.page-footer {
+	font-family: 'Raleway', sans-serif;
 }
 .logo__text {
-	color: #fff;
-	font-size: 30px;
+	font-size: 40px;
+	line-height: 150px;
 	font-weight: bold;
 	padding-left: 50px;
+	color: #fff;
 }
 .block-hello {
   background: #3498db;
@@ -130,7 +139,7 @@ body, p, h1, h2, h3, ul, li, a {
 }
 .block-hello__title {
 	font-size: 86px;
-	padding-top: 180px;
+	padding-top: 170px;
 }
 .block-hello__text {
 	font-size: 60px;
@@ -151,6 +160,14 @@ body, p, h1, h2, h3, ul, li, a {
 	background: #27ae60;
 	color: #fff;
 }
+.block-projects__text {
+	padding-bottom: 75px;
+}
+.slider__img {
+	height: 583px;
+	width: 814px;
+	margin: 0 auto 120px auto;
+}
 .block-info,
 .block-team {
 	background: #ecf0f1;
@@ -167,13 +184,13 @@ body, p, h1, h2, h3, ul, li, a {
 	top: 300px;
 	right: 0;
 }
-
 .block-clients {
 	background: #9b59b6;
 }
 .block-clients__title {
 	color: #fff;
 	padding-top: 450px;
+	padding-bottom: 80px;
 }
 .clients-logo {
 	display: -webkit-flex;
@@ -181,10 +198,40 @@ body, p, h1, h2, h3, ul, li, a {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content: space-around;
+	padding-bottom: 120px;
+}
+.clients-logo__link {
+	width: 180px;
+	height: 75px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
 }
 .row-services {
 	padding-top: 470px;
 }
 .page-footer {
 	background: #2c3e50;
+}
+.block-team__text {
+	padding-bottom: 70px;
+}
+.social {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 140px;
+	margin: 0 auto;
+	margin-bottom: 105px;
+}
+.col-team__text {
+	padding-bottom: 30px;
 }
