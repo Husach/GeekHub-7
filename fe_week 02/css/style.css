@@ -5,7 +5,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body, p, h1, h2, h3, ul, li, a {
+body, p, h1, h2, h3, ul, li, a, button {
 	margin: 0;
 	padding: 0;
 }
@@ -64,6 +64,11 @@ body, p, h1, h2, h3, ul, li, a {
   width: 1170px;
   padding: 0 15px;
 }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .row {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -74,16 +79,14 @@ body, p, h1, h2, h3, ul, li, a {
 	padding-bottom: 120px;
 }
 .col {
-	width: 320px;			/* temporarily */
-	height: 320px;			/* temporarily */
+	width: 320px;
 }
 .col__title {
 	position: relative;
 	font-size: 20px;
 	line-height: 35px;
 	color: #2c3e50;
-	padding-top: 260px;
-	padding-bottom: 15px;
+	padding: 260px 0 15px 0;
 }
 .col__title:before {
 	content: '';
@@ -98,8 +101,8 @@ body, p, h1, h2, h3, ul, li, a {
 }
 .col__text {
 	font-size: 16px;
-	line-height: 30px;
 	font-weight: 500;
+	line-height: 30px;
 	color: #2c3e50;
 	text-transform: none;
 }
@@ -114,8 +117,12 @@ body, p, h1, h2, h3, ul, li, a {
 	list-style: none;
 }
 .list__link {
+	font-size: 20px;
+	line-height: 150px;
+	text-transform: uppercase;
 	text-decoration: none;
-	padding-right: 10px;
+	color: #fff;
+	padding-right: 25px;
 }
 .page-header {
   font-family: 'Raleway', sans-serif;
@@ -128,69 +135,50 @@ body, p, h1, h2, h3, ul, li, a {
 	font-size: 40px;
 	line-height: 150px;
 	font-weight: bold;
-	padding-left: 50px;
 	color: #fff;
 }
-.block-hello {
-  background: #3498db;
-  font-weight: bold;	
-  color: #fff;
-	line-height: 92px;
+.button {
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
 }
-.block-hello__title {
-	font-size: 86px;
-	padding-top: 170px;
+.close:after,
+.close:before {
+	content: '';
+	width: 35px;
+	height: 8px;
+	position: absolute;
+	top: 70px;
+	left: 15px;
+	background: #fff;
 }
-.block-hello__text {
-	font-size: 60px;
-	padding-bottom: 370px;
+.close:after {
+	transform: rotate(45deg);
 }
-.block-over-about {
-	top: 510px;
+.close:before {
+	transform: rotate(-45deg);
+}
+.close__col:after,
+.close__col:before {
+	top: 160px;
 	left: 50%;
-	margin-left: -570px;
+	margin-left: -25px;
+	background: #3498db;
 }
-.block-over-about__text {
-	padding: 0 130px;
-}
-.block-services {
-	background: #ecf0f1;
-}
-.block-projects {
-	background: #27ae60;
-	color: #fff;
-}
-.block-projects__text {
-	padding-bottom: 75px;
+.close__col-sm:after,
+.close__col-sm:before {
+	top: 130px;
+	left: 50%;
+	margin-left: -25px;
+	background: #3498db;
 }
 .slider__img {
 	height: 583px;
 	width: 814px;
 	margin: 0 auto 120px auto;
-}
-.block-info,
-.block-team {
-	background: #ecf0f1;
-}
-.block-info__title {
-	color: #2c3e50;
-	padding-bottom: 320px;
-}
-.block-over-info {
-	top: 300px;
-	width: 48%;
-}
-.block-over-info:nth-child(odd) {
-	top: 300px;
-	right: 0;
-}
-.block-clients {
-	background: #9b59b6;
-}
-.block-clients__title {
-	color: #fff;
-	padding-top: 450px;
-	padding-bottom: 80px;
 }
 .clients-logo {
 	display: -webkit-flex;
@@ -212,15 +200,6 @@ body, p, h1, h2, h3, ul, li, a {
 	-ms-align-items: center;
 	align-items: center;
 }
-.row-services {
-	padding-top: 470px;
-}
-.page-footer {
-	background: #2c3e50;
-}
-.block-team__text {
-	padding-bottom: 70px;
-}
 .social {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -230,8 +209,85 @@ body, p, h1, h2, h3, ul, li, a {
 	justify-content: space-between;
 	width: 140px;
 	margin: 0 auto;
-	margin-bottom: 105px;
+}
+.block-hello {
+  background: #3498db;
+  font-weight: bold;	
+  color: #fff;
+	line-height: 92px;
+}
+.block-hello__title {
+	font-size: 86px;
+	padding-top: 170px;
+}
+.block-hello__text {
+	font-size: 60px;
+	padding-bottom: 370px;
+}
+.block-over-about {
+	top: 510px;
+	left: 50%;
+	margin-left: -570px;
+}
+.block-over-about__title {
+	padding-bottom: 10px;
+}
+.block-over-about__text {
+	padding: 0 130px;
+}
+.block-services {
+	background: #ecf0f1;
+}
+.block-projects {
+	background: #27ae60;
+	color: #fff;
+}
+.block-projects__text {
+	padding-bottom: 75px;
+}
+.block-info,
+.block-team {
+	background: #ecf0f1;
+}
+.block-info__title {
+	color: #2c3e50;
+	padding-bottom: 320px;
+}
+.block-over-info {
+	top: 300px;
+	width: 48%;
+}
+.block-over-info:nth-child(odd) {
+	top: 300px;
+	right: 0;
+}
+.block-over-info__text {
+	font-size: 16px;
+	padding: 0 55px;
+}
+.block-clients {
+	background: #9b59b6;
+}
+.block-clients__title {
+	color: #fff;
+	padding-top: 450px;
+	padding-bottom: 80px;
+}
+.row-services {
+	padding-top: 470px;
+}
+.page-footer {
+	background: #2c3e50;
+}
+.block-team__text {
+	padding-bottom: 70px;
 }
 .col-team__text {
 	padding-bottom: 30px;
+}
+.logo__footer {
+	float: left;
+}
+.main-menu__footer {
+	float: right;
 }
