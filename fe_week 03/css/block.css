@@ -1,0 +1,137 @@
+.block {
+	position: relative;
+	min-height: 750px;
+	background: #fff;
+	color: #666;
+}
+.block:nth-child(2n) {
+	background: #111;
+	color: #fff;
+}
+.block-header {
+	width: 750px;
+	padding: 100px 0 70px 20px;
+}
+.block-header:after {
+	content: '';
+	position: absolute;
+	top: 110px;
+	left: 0;
+	width: 2px;
+	height: 105px;
+	background-color: #e8bf5d;
+} 
+.block-header:first-child:after {
+	top: 85%;
+	left: -20px;
+	height: 90px;
+}
+.block__h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 65px;
+	font-weight: normal;
+	line-height: 45px;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+}
+.block__title {
+	font-family: 'Playfair Display', serif;
+	font-size: 31px;
+	font-weight: normal;
+	line-height: 45px;
+	margin: 0 0 15px 0;
+}
+.block__subtitle {
+	font-family: 'Playfair Display', serif;
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 31px;
+	max-width: 750px;
+	margin: 0;
+}
+.block__text {
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0;
+}
+.welcome-info {
+	position: relative;
+	width: 970px;
+	padding: 0;
+	padding-top: 30%;
+	color: #fff;
+}
+.info {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.info-block {
+	position: relative;
+	width: 385px;
+	margin: 0 0 60px 200px;
+}
+.info-block:after {
+	content: '';
+	height: 58px;
+	width: 58px;
+	position: absolute;
+	top: 10px;
+	left: -90px;
+}
+.info-block:first-child:after {
+	background: url(../img/icons/handshake.png) no-repeat center center;
+}
+.info-block:nth-child(2):after {
+	background: url(../img/icons/tool.png) no-repeat center center;
+}
+.info-block:nth-child(3):after {
+	background: url(../img/icons/monitor.png) no-repeat center center;
+}
+.info-block:nth-child(4):after {
+	background: url(../img/icons/house.png) no-repeat center center;
+}
+.info__title {
+	margin-bottom: 20px;
+}
+.info-block:nth-child(2) .info__title {
+	text-transform: uppercase;
+}
+.attorney {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.attorney__title {
+	color: #111;
+}
+.block:nth-child(4) {
+	background: url(../img/bg_clients.jpg) no-repeat center/cover;
+}
+.clients__photo {
+	box-shadow: 20px 20px #e8bf5d;
+}
+.faq-info {
+  width: 500px;
+  height: 280px;
+  background: #e8bf5d;
+  border-radius: 5px;
+  padding: 40px 75px 45px 45px;
+  -webkit-box-shadow: 0px 7px 40px 1px rgba(232,191,93,1);
+  -moz-box-shadow: 0px 7px 40px 1px rgba(232,191,93,1);
+  box-shadow: 0px 7px 40px 1px rgba(232,191,93,1);
+}
+.faq__text {
+	line-height: 31px;
+	color: #111;
+}
