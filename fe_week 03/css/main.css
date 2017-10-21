@@ -92,7 +92,18 @@
 }
                    /* 00_Welcome */
 .block-welcome {
-  background: url('../img/bg_top.jpg') center/cover;
+  background: url('../img/bg_top.jpg') no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d0d0d0+32,777777+67,333333+100 */
+/* background: #ffffff; Old browsers
+background: -moz-linear-gradient(top, #ffffff 0%, #d0d0d0 32%, #777777 67%, #333333 100%); FF3.6-15
+background: -webkit-linear-gradient(top, #ffffff 0%,#d0d0d0 32%,#777777 67%,#333333 100%); Chrome10-25,Safari5.1-6
+background: linear-gradient(to bottom, #ffffff 0%,#d0d0d0 32%,#777777 67%,#333333 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#333333',GradientType=0 ); IE6-9
+ */
+
   width: 100%;
   height: calc(100vh - 110px);
   margin-top: 110px;
