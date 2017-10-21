@@ -7,6 +7,9 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  counter-reset: blocks;
 }
 .container {
 	position: relative;
@@ -22,14 +25,22 @@ body {
 	border: none;
 	cursor: pointer;
 }
-.top {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-between;
+                   /* Page-header */
+.page-header {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	background: #fff;
+	height: 110px;
+	width: 100%;
+}
+.info-header {
+	-ms-align-items: center;
+	align-items: center;
 	text-transform: uppercase;
+	position: relative;
+	width: 1170px;
+	margin: 0 auto;
 }
 .logo {
 	font-size: 25px;
@@ -46,35 +57,62 @@ body {
 	display: inline-block;
 }
 .menu-link {
-	font-family: 'Open Sans', sans-serif;
+	position: relative;
 	font-size: 14px;
-  line-height: 110px;
-  color: #000;
+  line-height: 45px;
+  color: #111;
   text-decoration: none;
-  margin-left: 35px;
+  margin: 0 15px;
   padding-bottom: 10px;
 }
 .menu-link:hover {
 	border-bottom: 5px solid #e8bf5d;
 }
-.welcome {
-  position: relative;
-  background: url('../img/bg_top.jpg') center/cover;
-  width: 100%;
-  height: calc(100vh - 110px);
+                   /* Page-footer */
+.page-footer {
+	background: #111;
 }
-/*
-.welcome-info:after {
+.info-footer {
+	-ms-align-items: center;
+	align-items: center;
+	position: relative;
+	width: 1170px;
+	margin: 0 auto;
+}
+.footer__text {
+	color: #fff;
+	line-height: 80px;
+	margin: 0;
+}
+.copyright {
+	color: #b5b5b5;
+}
+.social {
+	position: relative;
+}
+.social__link {
+	font-size: 0;
+}
+.social__link:after {
 	content: '';
+	width: 20px;
+	height: 20px;
 	position: absolute;
-	bottom: 5px;
-	left: 85px;
-	width: 2px;
-	height: 85px;
-	background-color: #e8bf5d;
-} */
-.btn__contact {
-	position: absolute;
-	bottom: 30px;
-	right: 100px;
+	top: 0;
+	left: -200px;
+}
+.facebook:after {
+	background: url(../img/icons/fb.png) no-repeat center center;
+}
+.twitter:after {
+	background: url(../img/icons/twit.png) no-repeat center center;
+	left: -150px;
+}
+.googlep:after {
+	background: url(../img/icons/gp.png) no-repeat center center;
+	left: -100px;
+}
+.insta:after {
+	background: url(../img/icons/insta.png) no-repeat center center;
+	left: -50px;
 }
