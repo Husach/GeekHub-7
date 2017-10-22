@@ -12,22 +12,10 @@
   align-items: center; 
 	background: url(../img/bg_pattern.png) repeat-y center center;
 }
-.block:nth-child(2n+1) {
-	background: #111 url(../img/bg_pattern_2.png) repeat-y center center;
-}
-.block:nth-child(2n+1) .block__title,
-.block:nth-child(2n+1) .block__subtitle,
-.block:nth-child(2n+1) .block__text {
-	color: #fff;
-}
-.block:nth-child(2n+1) .block-header .block__subtitle {
-	color: #b9b9b9;
-}
 .block-header {
 	width: 750px;
 	margin: 110px 0 60px 0;
 	padding-left: 20px;
-
 	border-left: 2px solid #e8bf5d;
 }
 .block__h1 {
@@ -92,16 +80,43 @@
 }
                    /* 00_Welcome */
 .block-welcome {
-  background: rgba(255,255,255,0);
-  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(206,206,206,0.25) 32%, rgba(106,106,106,0.4) 61%, rgba(51,51,51,1) 100%), url('../img/bg_welcome.jpg') no-repeat center;
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(32%, rgba(206,206,206,0.25)), color-stop(61%, rgba(106,106,106,0.4)), color-stop(100%, rgba(51,51,51,1))), url('../img/bg_welcome.jpg') no-repeat center;
-  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(206,206,206,0.25) 32%, rgba(106,106,106,0.4) 61%, rgba(51,51,51,1) 100%), url('../img/bg_welcome.jpg') no-repeat center;
-  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(206,206,206,0.25) 32%, rgba(106,106,106,0.4) 61%, rgba(51,51,51,1) 100%), url('../img/bg_welcome.jpg') no-repeat center;
-  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(206,206,206,0.25) 32%, rgba(106,106,106,0.4) 61%, rgba(51,51,51,1) 100%), url('../img/bg_welcome.jpg') no-repeat center;
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(206,206,206,0.25) 32%, rgba(106,106,106,0.4) 61%, rgba(51,51,51,1) 100%), url('../img/bg_welcome.jpg') no-repeat center;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#333333', GradientType=0 );
+  background: ;
   -webkit-background-size: cover;
   background-size: cover;
+
+background: rgba(248,80,50,1);
+background: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(231,56,39,0) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(100%, rgba(231,56,39,0)));
+background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(231,56,39,0) 100%);
+background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(231,56,39,0) 100%);
+background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(231,56,39,0) 100%);
+background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(231,56,39,0) 100%), url('../img/bg_welcome.jpg') no-repeat center;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d0d0d0+32,777777+67,333333+100 */
+/* background: #ffffff; Old browsers
+background: -moz-linear-gradient(top, #ffffff 0%, #d0d0d0 32%, #777777 67%, #333333 100%); FF3.6-15
+background: -webkit-linear-gradient(top, #ffffff 0%,#d0d0d0 32%,#777777 67%,#333333 100%); Chrome10-25,Safari5.1-6
+background: linear-gradient(to bottom, #ffffff 0%,#d0d0d0 32%,#777777 67%,#333333 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#333333',GradientType=0 ); IE6-9
+ */
 
   width: 100%;
   height: calc(100vh - 110px);
