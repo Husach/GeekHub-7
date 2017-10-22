@@ -328,3 +328,8 @@ textarea {
 .map {
 	box-shadow: -20px 20px #e8bf5d;
 }
+iframe {
+	width: 360px;
+	height: 360px;
+	border: 0;
+}
