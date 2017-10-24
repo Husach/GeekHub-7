@@ -1,0 +1,20 @@
+.form-sign {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 290px;
+  background: #f0f0f0;
+}
+.form__email {
+	width: 400px;
+	line-height: 44px;
+  background: #f0f0f0;
+  border: 0;
+  border-bottom: 1px solid black;
+  outline: none;	
+}

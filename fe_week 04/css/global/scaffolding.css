@@ -1,0 +1,13 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #626262; }
+
+/*# sourceMappingURL=scaffolding.css.map */

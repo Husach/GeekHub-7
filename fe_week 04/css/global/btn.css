@@ -1,0 +1,14 @@
+.btn {
+  display: block;
+  width: 164px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 24px;
+  background: #fff;
+  border: 1px solid #626262;
+  margin: 0 auto; }
+
+.btn__more {
+  margin-top: 165px; }
+
+/*# sourceMappingURL=btn.css.map */

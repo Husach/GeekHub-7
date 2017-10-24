@@ -1,0 +1,16 @@
+.main__bg {
+	display: block;
+	margin: 0 auto;
+	max-width: 1060px;
+}
+.main-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  margin: 0 auto;
+}
