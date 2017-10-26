@@ -414,6 +414,22 @@ template {
   display: block;
   margin-top: 50px; }
 
+.main__bg {
+  display: block;
+  margin: 0 auto;
+  max-width: 1060px; }
+
+.main-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  margin: 0 auto; }
+
 .menu {
   width: 55%; }
 
@@ -432,21 +448,45 @@ template {
   text-transform: uppercase;
   text-decoration: none; }
 
-.main__bg {
-  display: block;
-  margin: 0 auto;
-  max-width: 1060px; }
+.page-footer {
+  background: #f0f0f0; }
 
-.main-content {
+.footer-container {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  width: 900px;
+  align-items: center;
+  width: 1060px;
+  height: 100px;
   margin: 0 auto; }
+
+.footer-menu-list:first-child {
+  margin-left: 80px; }
+
+.footer-menu-link {
+  color: #000;
+  text-transform: none;
+  margin-right: 20px; }
+
+.footer-social {
+  display: block;
+  position: relative;
+  font-size: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 20px; }
+
+.social-fb {
+  background: url("../img/icons_fb.png") no-repeat center center; }
+
+.social-tw {
+  background: url("../img/icons_tw.png") no-repeat center center; }
+
+.social-in {
+  background: url("../img/icons_in.png") no-repeat center center; }
 
 .page-header {
   display: -webkit-flex;
@@ -475,12 +515,15 @@ template {
   line-height: 24px;
   background: #fff;
   border: 1px solid #626262;
-  margin: 0 auto; }
+  margin: 0 auto;
+  cursor: pointer; }
 
 .btn__more {
-  margin-top: 165px; }
+  margin-top: 165px;
+  margin-bottom: 200px; }
 
 .form-sign {
+  position: relative;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -493,12 +536,24 @@ template {
   background: #f0f0f0; }
 
 .form__email {
+  position: relative;
   width: 400px;
   line-height: 44px;
   background: #f0f0f0;
   border: 0;
   border-bottom: 1px solid black;
   outline: none; }
+
+.form__btn:after {
+  content: '';
+  width: 32px;
+  height: 17px;
+  position: absolute;
+  top: 175px;
+  right: 50%;
+  margin-right: -200px;
+  background: url("../img/arrow_right.png") no-repeat center center;
+  z-index: 10; }
 
 *,
 *:before,
