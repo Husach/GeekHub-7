@@ -13,3 +13,13 @@
 	margin-top: 165px;
 	margin-bottom: 200px;
 }
+@media #{$tablet} {
+  .btn__more {
+    margin: 50px auto;
+  }
+}
+@media #{$mobile} {
+  .btn__more {
+    margin: 30px auto;
+  }
+}

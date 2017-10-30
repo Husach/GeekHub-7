@@ -20,3 +20,25 @@
 	display: block;
 	margin-top: 50px;
 }
+@media #{$tablet} {
+  .block {
+    width: 320px;
+    margin-top: 20px;
+  }
+  .block-wide {
+    width: 100%;
+  }
+  .block__title {
+    line-height: 36px;
+  }
+}
+@media #{$mobile} {
+  .block,
+  .block-wide {
+    width: 320px;
+    margin-top: 20px;
+  }
+  .block__title {
+    line-height: 36px;
+  }
+}

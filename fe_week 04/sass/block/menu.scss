@@ -2,11 +2,7 @@
   width: 55%;
 }
 .menu-list {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
+  @include flex;
   justify-content: space-between;
   list-style: none;
   margin: 0;
@@ -15,4 +11,12 @@
   color: #626262;
   text-transform: uppercase;
   text-decoration: none; 
+}
+@media #{$mobile} {
+  .menu {
+    display: none;
+  } 
+  .menu-list {
+    margin: 20px 0;
+  }
 }

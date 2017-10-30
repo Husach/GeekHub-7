@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$mobile".
-        on line 34 of E:\GeekHub-7\fe_week 04\sass\global\forms.scss
+Error: Undefined variable: "$tablet".
+        on line 25 of E:\GeekHub-7\fe_week 04\sass\block\main.scss
 
-29:   right: 50%;
-30:   margin-right: -200px;
-31:   background: url('../img/arrow_right.png') no-repeat center center;
-32:   z-index: 10;
-33: }
-34: @media #{$mobile} {
-35:   .form__email {
-36:   	width: 300px;
-37:   }
-38:   .form__btn:after {
-39:   	right: 50px;
+20:   top: 165px;
+21:   left: 50%;
+22:   margin-left: -531px;
+23:   background: url('../img/bg_main.jpg') no-repeat center center;
+24: }
+25: @media #{$tablet} {
+26:   .main-content {
+27:     width: 80%;
+28:     padding: 0 50px;
+29:   }
+30:   .main-content:before {
 
 Backtrace:
-E:\GeekHub-7\fe_week 04\sass\global\forms.scss:34
+E:\GeekHub-7\fe_week 04\sass\block\main.scss:25
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/interpolation.rb:170:in `_perform'
@@ -57,4 +57,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$mobile\".\A         on line 34 of E:\GeekHub-7\fe_week 04\sass\global\forms.scss\A \A 29:   right: 50%;\A 30:   margin-right: -200px;\A 31:   background: url('../img/arrow_right.png') no-repeat center center;\A 32:   z-index: 10;\A 33: }\A 34: @media #{$mobile} {\A 35:   .form__email {\A 36:   	width: 300px;\A 37:   }\A 38:   .form__btn:after {\A 39:   	right: 50px;"; }
+  content: "Error: Undefined variable: \"$tablet\".\A         on line 25 of E:\GeekHub-7\fe_week 04\sass\block\main.scss\A \A 20:   top: 165px;\A 21:   left: 50%;\A 22:   margin-left: -531px;\A 23:   background: url('../img/bg_main.jpg') no-repeat center center;\A 24: }\A 25: @media #{$tablet} {\A 26:   .main-content {\A 27:     width: 80%;\A 28:     padding: 0 50px;\A 29:   }\A 30:   .main-content:before {"; }
