@@ -1,0 +1,20 @@
+.main-content {
+  @include flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  margin: 0 auto;
+}
+.main-content:first-child {
+  margin-top: 509px;
+}
+.main-content:before {
+  content: '';
+  width: 1062px;
+  height: 509px;
+  position: absolute;
+  top: 165px;
+  left: 50%;
+  margin-left: -531px;
+  background: url('../img/bg_main.jpg') no-repeat center center;
+}

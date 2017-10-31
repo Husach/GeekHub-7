@@ -1,0 +1,19 @@
+.block {
+  min-height: 100vh;
+}
+.block-home {
+  @include bg_block('../img/bg_home.jpg');
+}
+.block-watch {
+  @include bg_block('../img/bg_watch.jpg');
+}
+.block-teams {
+  @include bg_block('../img/bg_teams.jpg');
+}
+.block-say {
+  @include bg_block('../img/bg_say.jpg');
+}
+.block-footer {
+  min-height: 400px;
+  @include bg_block('../img/bg_footer.jpg');
+}

@@ -1,0 +1,10 @@
+.page-header {
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+  height: 80px;
+}
