@@ -1,4 +1,5 @@
 .block {
+  @include flex-center;
   min-height: 100vh;
 }
 .block-home {
@@ -16,4 +17,106 @@
 .block-footer {
   min-height: 400px;
   @include bg_block('../img/bg_footer.jpg');
+}
+.block-content {
+  width: 960px;
+}
+.block__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.block__text {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+.block-about .block-content {
+  padding-left: 410px;
+}
+.block-about__title {
+  position: relative;
+  text-align: left; 
+}
+.block-about__text {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;  
+}
+.block-about__title:after {
+  content: '';
+  height: 235px;
+  width: 229px;
+  position: absolute;
+  top: 0;
+  left: -340px;
+  background: url('../img/big-logo.png') no-repeat center center;
+}
+.block-expertise__text {
+  color: #2f2d35;
+  margin-bottom: 65px;
+}
+.block-gallery {
+  @include flex;
+  flex-wrap: wrap;
+}
+.mini-block {
+  height: 250px;
+  width: 320px;
+  padding: 0 30px;
+}
+.mini-block:nth-child(3n+2) {
+  border-left:  1px solid #ebebeb; 
+  border-right: 1px solid #ebebeb; 
+}
+.mini-block:nth-child(1),
+.mini-block:nth-child(2),
+.mini-block:nth-child(3) {
+  border-bottom: 1px solid #ebebeb;
+}
+.mini-block__title {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 125px;
+}
+.mini-block__text {
+  color: #333;
+  text-align: center;
+}
+.monitor {
+  position: relative;
+  &:after {
+    @include img_mini-block('../img/icons/monitor.png');
+  }
+}
+.pen {
+  position: relative;
+  &:after {
+    @include img_mini-block('../img/icons/pen.png');
+  }
+}
+.mobile {
+  position: relative;
+  &:after {
+    @include img_mini-block('../img/icons/mobile.png');
+  }
+}
+.piece {
+  position: relative;
+  &:after {
+    @include img_mini-block('../img/icons/piece.png');
+  }
+}
+.calc {
+  position: relative;
+  &:after {
+    @include img_mini-block('../img/icons/calc.png');
+  }
+}
+.heart {
+  position: relative;
+  &:after {
+    @include img_mini-block('../img/icons/heart.png');
+  }
 }

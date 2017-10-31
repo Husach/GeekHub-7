@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&subset=cyrillic");
 html {
   line-height: 1.15;
@@ -392,6 +392,13 @@ template {
   display: none; }
 
 .block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh; }
 
 .block-home {
@@ -409,6 +416,148 @@ template {
 .block-footer {
   min-height: 400px;
   background: linear-gradient(to right, rgba(9, 5, 47, 0.85) 0%, rgba(49, 29, 94, 0.85) 100%), url("../img/bg_footer.jpg") no-repeat center/cover; }
+
+.block-content {
+  width: 960px; }
+
+.block__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; }
+
+.block__text {
+  font-family: 'Playfair Display', serif;
+  text-align: center; }
+
+.block-about .block-content {
+  padding-left: 410px; }
+
+.block-about__title {
+  position: relative;
+  text-align: left; }
+
+.block-about__text {
+  font-family: 'Roboto', sans-serif;
+  text-align: left; }
+
+.block-about__title:after {
+  content: '';
+  height: 235px;
+  width: 229px;
+  position: absolute;
+  top: 0;
+  left: -340px;
+  background: url("../img/big-logo.png") no-repeat center center; }
+
+.block-expertise__text {
+  color: #2f2d35;
+  margin-bottom: 65px; }
+
+.block-gallery {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap; }
+
+.mini-block {
+  height: 250px;
+  width: 320px;
+  padding: 0 30px; }
+
+.mini-block:nth-child(3n+2) {
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb; }
+
+.mini-block:nth-child(1),
+.mini-block:nth-child(2),
+.mini-block:nth-child(3) {
+  border-bottom: 1px solid #ebebeb; }
+
+.mini-block__title {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 125px; }
+
+.mini-block__text {
+  color: #333;
+  text-align: center; }
+
+.monitor {
+  position: relative; }
+  .monitor:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -25px;
+    background: url("../img/icons/monitor.png") no-repeat center center; }
+
+.pen {
+  position: relative; }
+  .pen:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -25px;
+    background: url("../img/icons/pen.png") no-repeat center center; }
+
+.mobile {
+  position: relative; }
+  .mobile:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -25px;
+    background: url("../img/icons/mobile.png") no-repeat center center; }
+
+.piece {
+  position: relative; }
+  .piece:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -25px;
+    background: url("../img/icons/piece.png") no-repeat center center; }
+
+.calc {
+  position: relative; }
+  .calc:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -25px;
+    background: url("../img/icons/calc.png") no-repeat center center; }
+
+.heart {
+  position: relative; }
+  .heart:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -25px;
+    background: url("../img/icons/heart.png") no-repeat center center; }
 
 .main-content {
   display: -webkit-flex;
@@ -557,9 +706,9 @@ body {
   position: relative;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  font-weight: normal;
-  line-height: 24px;
-  color: #333; }
+  font-weight: 300;
+  line-height: 22px;
+  color: #413d4b; }
 
 .container {
   display: -webkit-flex;

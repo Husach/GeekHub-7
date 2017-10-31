@@ -1,22 +1,19 @@
 /*
-Error: Undefined mixin 'bg_block'.
-        on line 5 of E:\GeekHub-7\fe_week 05\sass\block\block.scss, in `bg_block'
-        from line 5 of E:\GeekHub-7\fe_week 05\sass\block\block.scss
+Error: Undefined mixin 'flex-center'.
+        on line 2 of E:\GeekHub-7\fe_week 05\sass\block\block.scss, in `flex-center'
+        from line 2 of E:\GeekHub-7\fe_week 05\sass\block\block.scss
 
 1: .block {
-2:   min-height: 100vh;
-3: }
-4: .block-home {
-5:   @include bg_block('../img/bg_home.jpg');
-6: }
-7: .block-watch {
-8:   @include bg_block('../img/bg_watch.jpg');
-9: }
-10: .block-teams {
+2:   @include flex-center;
+3:   min-height: 100vh;
+4: }
+5: .block-home {
+6:   @include bg_block('../img/bg_home.jpg');
+7: }
 
 Backtrace:
-E:\GeekHub-7\fe_week 05\sass\block\block.scss:5:in `bg_block'
-E:\GeekHub-7\fe_week 05\sass\block\block.scss:5
+E:\GeekHub-7\fe_week 05\sass\block\block.scss:2:in `flex-center'
+E:\GeekHub-7\fe_week 05\sass\block\block.scss:2
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -65,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'bg_block'.\A         on line 5 of E:\GeekHub-7\fe_week 05\sass\block\block.scss, in `bg_block'\A         from line 5 of E:\GeekHub-7\fe_week 05\sass\block\block.scss\A \A 1: .block {\A 2:   min-height: 100vh;\A 3: }\A 4: .block-home {\A 5:   @include bg_block('../img/bg_home.jpg');\A 6: }\A 7: .block-watch {\A 8:   @include bg_block('../img/bg_watch.jpg');\A 9: }\A 10: .block-teams {"; }
+  content: "Error: Undefined mixin 'flex-center'.\A         on line 2 of E:\GeekHub-7\fe_week 05\sass\block\block.scss, in `flex-center'\A         from line 2 of E:\GeekHub-7\fe_week 05\sass\block\block.scss\A \A 1: .block {\A 2:   @include flex-center;\A 3:   min-height: 100vh;\A 4: }\A 5: .block-home {\A 6:   @include bg_block('../img/bg_home.jpg');\A 7: }"; }

@@ -1,28 +1,24 @@
 /*
-Error: Undefined mixin 'flex'.
-        on line 15 of E:\GeekHub-7\fe_week 05\sass\global\scaffolding.scss, in `flex'
-        from line 15 of E:\GeekHub-7\fe_week 05\sass\global\scaffolding.scss
+Error: Undefined variable: "$grey".
+        on line 12 of E:\GeekHub-7\fe_week 05\sass\global\scaffolding.scss
 
-10:   font-weight: normal;
-11:   line-height: 24px;
-12:   color: #333;
+7:   position: relative;
+8:   font-family: 'Roboto', sans-serif;
+9:   font-size: 14px;
+10:   font-weight: 300;
+11:   line-height: 22px;
+12:   color: $grey;
 13: }
 14: .container {
 15:   @include flex;
 16:   justify-content: space-between;
 17:   align-items: center;
-18:   width: 960px;
-19:   margin: 0 auto;
-20: }
 
 Backtrace:
-E:\GeekHub-7\fe_week 05\sass\global\scaffolding.scss:15:in `flex'
-E:\GeekHub-7\fe_week 05\sass\global\scaffolding.scss:15
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+E:\GeekHub-7\fe_week 05\sass\global\scaffolding.scss:12
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -66,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flex'.\A         on line 15 of E:\GeekHub-7\fe_week 05\sass\global\scaffolding.scss, in `flex'\A         from line 15 of E:\GeekHub-7\fe_week 05\sass\global\scaffolding.scss\A \A 10:   font-weight: normal;\A 11:   line-height: 24px;\A 12:   color: #333;\A 13: }\A 14: .container {\A 15:   @include flex;\A 16:   justify-content: space-between;\A 17:   align-items: center;\A 18:   width: 960px;\A 19:   margin: 0 auto;\A 20: }"; }
+  content: "Error: Undefined variable: \"$grey\".\A         on line 12 of E:\GeekHub-7\fe_week 05\sass\global\scaffolding.scss\A \A 7:   position: relative;\A 8:   font-family: 'Roboto', sans-serif;\A 9:   font-size: 14px;\A 10:   font-weight: 300;\A 11:   line-height: 22px;\A 12:   color: $grey;\A 13: }\A 14: .container {\A 15:   @include flex;\A 16:   justify-content: space-between;\A 17:   align-items: center;"; }
