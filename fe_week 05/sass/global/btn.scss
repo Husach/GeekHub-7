@@ -1,15 +1,26 @@
-/* .btn {
+.btn {
   display: block;
-  width: 164px;
-  height: 60px;
-  font-size: 20px;
-  line-height: 24px;
-  background: #fff;
-  border: 1px solid #626262;
+  width: 120px;
+  height: 40px;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: $green;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid $green;
   margin: 0 auto;
   cursor: pointer;
 }
-.btn__more {
-	margin-top: 165px;
-	margin-bottom: 200px;
-} */
+.btn__about {
+  margin: 0;
+}
+.btn__hiring {
+  width: 140px;
+}
+.btn__submit {
+  background: $white;
+  margin-top: 20px;
+  margin-left: 0;
+}

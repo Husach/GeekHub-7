@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAQ,+FAAuF;AACvF,6FAAqF",
+"mappings": "AAAQ,+FAAuF;AACvF,6FAAqF;AACrF,sEAA8D",
 "sources": ["../../sass/global/fonts.scss"],
 "names": [],
 "file": "fonts.css"

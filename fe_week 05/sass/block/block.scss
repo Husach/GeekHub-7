@@ -21,27 +21,49 @@
 .block-content {
   width: 960px;
 }
+.block__h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 40px;
+  color: $white;
+  text-align: center;
+  margin-bottom: 50px;
+}
 .block__title {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 .block__text {
   font-family: 'Playfair Display', serif;
+  font-size: 14px;
   text-align: center;
+  margin-bottom: 50px;
 }
+.block:nth-child(odd) .block__title,
+.block:nth-child(odd) .block__text,
+.block:nth-child(odd) .mini-block__title,
+.block:nth-child(odd) .mini-block__text {
+  color: $white;
+}
+                  /* 01_home */
+.block-home__text {
+  font-family: 'Roboto', sans-serif;
+  line-height: 24px;
+  padding: 0 90px;
+  margin-bottom: 50px;
+}
+                  /* 02_about */
 .block-about .block-content {
   padding-left: 410px;
 }
 .block-about__title {
   position: relative;
   text-align: left; 
-}
-.block-about__text {
-  font-family: 'Roboto', sans-serif;
-  text-align: left;  
 }
 .block-about__title:after {
   content: '';
@@ -52,9 +74,20 @@
   left: -340px;
   background: url('../img/big-logo.png') no-repeat center center;
 }
+.block-about__text {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;  
+}
+                  /* 03_watch */
+.block-watch__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+}
+                  /* 04_expertise */
 .block-expertise__text {
   color: #2f2d35;
-  margin-bottom: 65px;
+  margin-bottom: 100px;
 }
 .block-gallery {
   @include flex;
@@ -78,11 +111,15 @@
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
+  margin: 10px 0 0 0;
+}
+.block-expertise .mini-block__title {
   margin-top: 125px;
 }
 .mini-block__text {
   color: #333;
   text-align: center;
+  margin: 0;
 }
 .monitor {
   position: relative;
@@ -120,3 +157,122 @@
     @include img_mini-block('../img/icons/heart.png');
   }
 }
+                  /* 05_teams */
+.block-gallery__team {
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.mini-block__team {
+  width: 220px;
+  height: 310px;
+  border: 1px solid #e1e1e1;
+  padding: 0;
+}
+.block-teams__text {
+  font-family: 'Roboto', sans-serif;
+}
+                  /* 06_gallery */
+.block-works {
+  flex-direction: column;
+}   
+.block-works .block-content {
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.block-works__link {
+  display: block;
+  text-decoration: none;
+}        
+.mini-block__photo {
+  width: 16%; 
+  flex-grow: 1;
+  height: 200px;
+}
+.mini-block__photo:nth-child(2n) {
+  background: #b6b6b6;
+}
+.mini-block__photo:nth-child(2n+1) {
+  background: #acacac;
+}
+.mini-block__photo:nth-child(3n+1) {
+  background: #a1a1a1;
+}
+.mini-block__photo:nth-child(4n+1) {
+  background: #8a8a8a;
+}
+.block-works .block-gallery {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.block-works .mini-block {
+  border: 0;
+}
+                  /* 07_say */
+.block-say__text {
+  position: relative;
+  line-height: 26px;
+  padding: 0 90px;
+}
+.block-say__text:after {
+  content: '';
+  width: 32px;
+  height: 26px;
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  margin-left: -16px;
+  background: url('../img/svg/quote.svg') no-repeat center center;
+}
+.block-say__author {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1;
+}
+.block-say__position {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+                  /* 08_contact */
+.block-contact-content {
+  @include flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block-contact__title,
+.contact-form {
+  width: 460px;
+}
+.block-contact__title:nth-child(2n),
+.contact-logo {
+  width: 390px;
+}
+.block-contact__title {
+  text-align: left;
+}
+.contact-form {
+  @include flex;
+  flex-direction: column;
+}
+.form-text {
+  height: 45px;
+  @include input;
+}
+.form-area {
+  height: 200px;
+  @include input;
+  padding-top: 15px;
+}
+.contact-logo {
+  @include flex-center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ .logo-svg {
+  width: 170px;
+  margin: 20px 0;
+ }

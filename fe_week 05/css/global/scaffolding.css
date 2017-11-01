@@ -4,7 +4,7 @@ Error: Undefined variable: "$grey".
 
 7:   position: relative;
 8:   font-family: 'Roboto', sans-serif;
-9:   font-size: 14px;
+9:   font-size: 16px;
 10:   font-weight: 300;
 11:   line-height: 22px;
 12:   color: $grey;
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grey\".\A         on line 12 of E:\GeekHub-7\fe_week 05\sass\global\scaffolding.scss\A \A 7:   position: relative;\A 8:   font-family: 'Roboto', sans-serif;\A 9:   font-size: 14px;\A 10:   font-weight: 300;\A 11:   line-height: 22px;\A 12:   color: $grey;\A 13: }\A 14: .container {\A 15:   @include flex;\A 16:   justify-content: space-between;\A 17:   align-items: center;"; }
+  content: "Error: Undefined variable: \"$grey\".\A         on line 12 of E:\GeekHub-7\fe_week 05\sass\global\scaffolding.scss\A \A 7:   position: relative;\A 8:   font-family: 'Roboto', sans-serif;\A 9:   font-size: 16px;\A 10:   font-weight: 300;\A 11:   line-height: 22px;\A 12:   color: $grey;\A 13: }\A 14: .container {\A 15:   @include flex;\A 16:   justify-content: space-between;\A 17:   align-items: center;"; }
