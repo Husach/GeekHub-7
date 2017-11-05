@@ -1,29 +1,39 @@
-/* .form-sign {
+.contact-form {
   @include flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  height: 290px;
-  background: #f0f0f0;
 }
-.form__email {
-  position: relative;
-  width: 400px;
-  line-height: 44px;
-  background: #f0f0f0;
-  border: 0;
-  border-bottom: 1px solid black;
-  outline: none;	
+.form-text {
+  height: 45px;
+  @include input;
 }
-.form__btn:after {
+.form-area {
+  height: 200px;
+  @include input;
+  padding-top: 15px;
+}
+.form-footer {
+  background: transparent;
+  border: 1px solid $white;
+  opacity: 0.5;
+  margin-top: 0;
+}
+.form-footer-btn {
+  position: relative;
+  top: 15px;
+  width: 70px;
+  height: 45px;
+  opacity: 0.5;
+  background: $white;
+  outline: none;
+}
+.form-footer-btn:after {
   content: '';
-  width: 32px;
-  height: 17px;
   position: absolute;
-  top: 175px;
-  right: 50%;
-  margin-right: -200px;
-  background: url('../img/arrow_right.png') no-repeat center center;
-  z-index: 10;
-} */
+  top: 50%;
+  margin-top: -13px;
+  left: 50%;
+  margin-left: -15px;
+  width: 26px;
+  height: 26px;
+  background: url('../img/icons/arrow.png') no-repeat center center;
+}

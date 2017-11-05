@@ -1,36 +1,78 @@
-/* .page-footer {
-  background: #f0f0f0;
-}
-.footer-container {
+.footer-row {
   @include flex;
   justify-content: space-between;
-  align-items: center;
-  width: 1060px;
-  height: 100px;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
-.footer-menu-list:first-child {
-  margin-left: 80px;
+.footer-column {
+  width: 290px;
 }
-.footer-menu-link {
-  color: #000;
-  text-transform: none;
-  margin-right: 20px;
+.footer__title {
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $white;
+}
+.footer__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  color: $white;
+}
+.footer-contacts {
+  position: relative;
+  padding-left: 30px;
+}
+.footer-contacts:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+}
+.map:after {
+  background: url('../img/icons/map.png') no-repeat center center;
+}
+.phone:after {
+  background: url('../img/icons/phone.png') no-repeat center center;
+}
+.copyright {
+  font-weight: 400;
 }
 .footer-social {
+  @include flex;
+  padding-left: 0;
+}
+.social-item {
+  list-style: none;
+  margin-right: 10px;
+}
+.social-link {
   display: block;
-  position: relative;
   font-size: 0;
-  width: 18px;
-  height: 18px;
-  margin-right: 20px;
+  text-decoration: none;
+  color: $white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid $white;
 }
 .social-fb {
-  background: url('../img/icons_fb.png') no-repeat center center;
+  background: url('../img/icons/fb.png') no-repeat center center;
 }
 .social-tw {
-  background: url('../img/icons_tw.png') no-repeat center center;
+  background: url('../img/icons/tw.png') no-repeat center center;
 }
-.social-in {
-  background: url('../img/icons_in.png') no-repeat center center;
-} */
+.social-dr {
+  background: url('../img/icons/dr.png') no-repeat center center;
+}
+.social-inst {
+  background: url('../img/icons/inst.png') no-repeat center center;
+}
+.social-gp {
+  background: url('../img/icons/gp.png') no-repeat center center;
+}
+.social-yt {
+  background: url('../img/icons/yt.png') no-repeat center center;
+}
