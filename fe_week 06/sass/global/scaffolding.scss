@@ -1,0 +1,14 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 30px;
+}
+.container {
+	max-width: 1200px;	
+}

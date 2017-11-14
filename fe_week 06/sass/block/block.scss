@@ -1,0 +1,79 @@
+.block {
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &:nth-child(odd) {
+    .block__text {
+      color: $white;
+    }
+
+    .block__title {
+      color: $white;
+    }
+  }
+
+  &:nth-child(3n) {
+    height: 380px;
+    background: url('../img/bg_3n.jpg') no-repeat center/cover;
+  }
+
+  &__h2 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 72px;
+    color: $white;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: $grey;
+
+    &-header {
+      margin-bottom: 90px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    color: $grey;
+  }
+
+  &-welcome {
+    height: calc(100vh - 150px);
+    background: url('../img/bg_main.jpg') no-repeat center/cover;
+  }
+
+  &-news {
+    min-height: 800px;
+  }
+
+  &-product {
+    .row {
+      @include flex;
+      margin-top: 70px;
+    
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+    .block__title {
+      text-align: left;
+    }
+    .block__text {
+      text-align: left;
+    }
+  }
+  &-components {
+    background: $orange;
+  }
+}
+
+.welcome-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
