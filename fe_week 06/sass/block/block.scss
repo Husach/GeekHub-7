@@ -2,6 +2,7 @@
   @include flex;
   flex-direction: column;
   justify-content: center;
+  background: #edeff1;
 
   &:nth-child(odd) {
     .block__text {
@@ -33,7 +34,7 @@
     color: $grey;
 
     &-header {
-      margin-bottom: 90px;
+      margin-bottom: 40px;
     }
   }
 
@@ -44,7 +45,7 @@
 
   &-welcome {
     height: calc(100vh - 150px);
-    background: url('../img/bg_main.jpg') no-repeat center/cover;
+    background: url('../img/bg_main.jpg') no-repeat center center;
   }
 
   &-news {
@@ -54,7 +55,7 @@
   &-product {
     .row {
       @include flex;
-      margin-top: 70px;
+      margin: 50px 0;
     
       &:nth-child(even) {
         flex-direction: row-reverse;
@@ -62,13 +63,33 @@
     }
     .block__title {
       text-align: left;
+      padding: 40px 20px 30px 40px;
     }
     .block__text {
       text-align: left;
+      padding: 0 20px 0 40px;
     }
   }
   &-components {
     background: $orange;
+    
+    .col-lg-4 {
+      width: 390px;
+    }
+
+    .row {
+      margin: 100px 0;
+    }
+  }
+
+  &-footer {
+    .block__text {
+      color: $white;
+      margin-bottom: 0;
+    }
+  }
+  span {
+    font-weight: bold;
   }
 }
 
@@ -76,4 +97,21 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+.components__text {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: $white;
+  text-align: center;
+}
+.email {
+  width: 509px;
+  height: 54px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
+  padding-left: 30px;
+  color: $white;
 }

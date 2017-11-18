@@ -1,15 +1,31 @@
-/* .btn {
+.btn {
   display: block;
-  width: 164px;
-  height: 60px;
-  font-size: 20px;
-  line-height: 24px;
-  background: #fff;
-  border: 1px solid #626262;
   margin: 0 auto;
+  width: 213px;
+  height: 54px;
+  background-color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 27px;
   cursor: pointer;
+  font-size: 18px;
+  color: #612316;
+  line-height: 35px;
+  margin-top: 50px;
 }
-.btn__more {
-	margin-top: 165px;
-	margin-bottom: 200px;
-} */
+.btn-red {
+  margin: 50px 0 0 40px; 
+  background-color: #dd4b2b;
+  color: $white;
+}
+.btn-blue {
+  margin: 50px 0 0 40px; 
+  background-color: #4b4e73;
+  color: $white;
+}
+.btn-white {
+  position: relative;
+  top: -54px;
+  left: 295px;
+  margin: 0;
+  background-color: $white;
+}

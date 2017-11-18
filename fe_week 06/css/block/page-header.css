@@ -1,19 +1,19 @@
 /*
 Error: Undefined mixin 'flex'.
-        on line 2 of E:\GeekHub-7\fe_week 06\sass\block\block.scss, in `flex'
-        from line 2 of E:\GeekHub-7\fe_week 06\sass\block\block.scss
+        on line 2 of E:\GeekHub-7\fe_week 06\sass\block\page-header.scss, in `flex'
+        from line 2 of E:\GeekHub-7\fe_week 06\sass\block\page-header.scss
 
-1: .block {
+1: .page-header {
 2:   @include flex;
-3:   flex-direction: column;
-4:   justify-content: center;
-5:   background: #edeff1;
+3:   height: 150px;
+4:   align-items: center;
+5:   justify-content: space-between;
 6: 
-7:   &:nth-child(odd) {
+7:   .row {
 
 Backtrace:
-E:\GeekHub-7\fe_week 06\sass\block\block.scss:2:in `flex'
-E:\GeekHub-7\fe_week 06\sass\block\block.scss:2
+E:\GeekHub-7\fe_week 06\sass\block\page-header.scss:2:in `flex'
+E:\GeekHub-7\fe_week 06\sass\block\page-header.scss:2
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flex'.\A         on line 2 of E:\GeekHub-7\fe_week 06\sass\block\block.scss, in `flex'\A         from line 2 of E:\GeekHub-7\fe_week 06\sass\block\block.scss\A \A 1: .block {\A 2:   @include flex;\A 3:   flex-direction: column;\A 4:   justify-content: center;\A 5:   background: #edeff1;\A 6: \A 7:   &:nth-child(odd) {"; }
+  content: "Error: Undefined mixin 'flex'.\A         on line 2 of E:\GeekHub-7\fe_week 06\sass\block\page-header.scss, in `flex'\A         from line 2 of E:\GeekHub-7\fe_week 06\sass\block\page-header.scss\A \A 1: .page-header {\A 2:   @include flex;\A 3:   height: 150px;\A 4:   align-items: center;\A 5:   justify-content: space-between;\A 6: \A 7:   .row {"; }

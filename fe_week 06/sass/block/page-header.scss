@@ -1,9 +1,37 @@
 .page-header {
+  @include flex;
   height: 150px;
+  align-items: center;
+  justify-content: space-between;
+
+  .row {
+  	width: 100%;
+  }
+
+  .nav {
+  	@include flex;
+  	justify-content: space-around;
+  }
+
+  
 }
 .logo-img {
   display: block;
   width: 157px;
   height: 52px;
   background: url('../img/logo.png') no-repeat center center;
+}
+
+.nav-link {
+  padding: 0 0 0 20px;
+  font-size: 18px;
+  color: #31353e;
+  line-height: 52px;
+
+  &:hover {
+    background-color: #dd4b2b;
+    border-radius: 25px;
+    color: $white;
+    width: 120%;
+  }
 }

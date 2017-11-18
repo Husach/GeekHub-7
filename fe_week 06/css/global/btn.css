@@ -1,24 +1,24 @@
 /*
-Error: Undefined mixin 'flex'.
-        on line 2 of E:\GeekHub-7\fe_week 06\sass\block\block.scss, in `flex'
-        from line 2 of E:\GeekHub-7\fe_week 06\sass\block\block.scss
+Error: Undefined variable: "$white".
+        on line 18 of E:\GeekHub-7\fe_week 06\sass\global\btn.scss
 
-1: .block {
-2:   @include flex;
-3:   flex-direction: column;
-4:   justify-content: center;
-5:   background: #edeff1;
-6: 
-7:   &:nth-child(odd) {
+13:   margin-top: 50px;
+14: }
+15: .btn-red {
+16:   margin: 50px 0 0 40px; 
+17:   background-color: #dd4b2b;
+18:   color: $white;
+19: }
+20: .btn-blue {
+21:   margin: 50px 0 0 40px; 
+22:   background-color: #4b4e73;
+23:   color: $white;
 
 Backtrace:
-E:\GeekHub-7\fe_week 06\sass\block\block.scss:2:in `flex'
-E:\GeekHub-7\fe_week 06\sass\block\block.scss:2
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+E:\GeekHub-7\fe_week 06\sass\global\btn.scss:18
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flex'.\A         on line 2 of E:\GeekHub-7\fe_week 06\sass\block\block.scss, in `flex'\A         from line 2 of E:\GeekHub-7\fe_week 06\sass\block\block.scss\A \A 1: .block {\A 2:   @include flex;\A 3:   flex-direction: column;\A 4:   justify-content: center;\A 5:   background: #edeff1;\A 6: \A 7:   &:nth-child(odd) {"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 18 of E:\GeekHub-7\fe_week 06\sass\global\btn.scss\A \A 13:   margin-top: 50px;\A 14: }\A 15: .btn-red {\A 16:   margin: 50px 0 0 40px; \A 17:   background-color: #dd4b2b;\A 18:   color: $white;\A 19: }\A 20: .btn-blue {\A 21:   margin: 50px 0 0 40px; \A 22:   background-color: #4b4e73;\A 23:   color: $white;"; }
