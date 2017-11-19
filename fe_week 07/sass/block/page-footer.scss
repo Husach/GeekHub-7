@@ -1,0 +1,78 @@
+.page-footer {
+  min-height: 640px;
+  background: #1f2a32;
+
+	.col-md-3 {
+		padding: 0;
+	}
+	span {
+		color: #6a7782;
+	}
+}
+.footer-top {
+	.col-md-3:first-child {
+	  border-top: 15px solid #7827a9;	
+	}
+	.col-md-3:nth-child(2) {
+	  border-top: 15px solid #0c8fcc;	
+	}
+	.col-md-3:nth-child(3) {
+	  border-top: 15px solid #de1c5c;	
+	}
+	.col-md-3:last-child {
+	  border-top: 15px solid #ffae00;	
+	}
+}
+
+.footer__title {
+	font-size: 24px;
+	color: #fff;
+	padding: 60px 0 40px 0;
+}
+.social .footer__text {
+  padding-left: 60px;
+  line-height: 50px;
+}
+.footer__text {
+	position: relative;
+	font-size: 12px;
+	color: #fff;
+	padding-left: 25px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+
+	&-green {
+		color: #0a948b;
+		margin-bottom: 20px;
+		line-height: 30px;
+	}
+}
+
+
+.flag {
+	background: url('../img/icons/flag.jpg') no-repeat left top;
+}
+.phone {
+	background: url('../img/icons/phone.jpg') no-repeat left top;
+}
+.message {
+	background: url('../img/icons/message.jpg') no-repeat left top;
+}
+.bird {
+	background: url('../img/icons/bird.jpg') no-repeat left top;
+}
+.facebook {
+	background: url('../img/facebook.jpg') no-repeat left center;
+}
+.twitter {
+	background: url('../img/twitter.jpg') no-repeat left center;
+}
+.youtube {
+	background: url('../img/youtube.jpg') no-repeat left center;
+}
+.instagram {
+	background: url('../img/instagram.jpg') no-repeat left center;
+}
+.repin {
+	background: url('../img/repin.jpg') no-repeat left center;
+}

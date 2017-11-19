@@ -1,0 +1,9 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 930px; }
+
+/*# sourceMappingURL=scaffolding.css.map */

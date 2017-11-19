@@ -1,0 +1,27 @@
+.header-top {
+  height: 50px;
+  background: #000; }
+  .header-top a {
+    font-size: 14px;
+    line-height: 50px; }
+
+.header-search {
+  width: 210px;
+  background: #000;
+  border: 1px solid #434a50;
+  padding-left: 10px;
+  margin-top: 8px; }
+
+.header-bottom {
+  height: 70px;
+  background: #7f7f7f; }
+  .header-bottom .col-md-9 {
+    padding: 0; }
+
+.header-logo {
+  display: block;
+  width: 132px;
+  height: 72px;
+  background: url("../img/logo.jpg") no-repeat center center; }
+
+/*# sourceMappingURL=page-header.css.map */

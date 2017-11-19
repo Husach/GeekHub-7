@@ -1,0 +1,46 @@
+.nav {
+	@include flex();
+	justify-content: space-between;
+
+}
+
+.nav-inline .nav-item+.nav-item {
+	margin-left: 0;
+}
+
+.nav-item {
+  width: 14.28%;
+
+  &:first-child {
+  	border-top: 10px solid #ffae00;
+  }
+  &:nth-child(2) {
+    border-top: 10px solid #fc7100;	
+  }
+	&:nth-child(3) {
+    border-top: 10px solid #e51c5e;	
+  } 
+  &:nth-child(4) {
+    border-top: 10px solid #ae0f8d;	
+  } 
+  &:nth-child(5) {
+    border-top: 10px solid #6d0fae;	
+  } 
+  &:nth-child(6) {
+    border-top: 10px solid #33227a;	
+  } 
+  &:last-child {
+    border-top: 10px solid #0c8fcc;	
+  } 
+}
+
+.nav-link {
+	display: block;
+	font-family: 'MyriadProRegular';
+  font-size: 15px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+	text-align: center;
+}

@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal; }
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 930px; }
+
+.nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between; }
+
+.nav-inline .nav-item + .nav-item {
+  margin-left: 0; }
+
+.nav-item {
+  width: 14.28%; }
+  .nav-item:first-child {
+    border-top: 10px solid #ffae00; }
+  .nav-item:nth-child(2) {
+    border-top: 10px solid #fc7100; }
+  .nav-item:nth-child(3) {
+    border-top: 10px solid #e51c5e; }
+  .nav-item:nth-child(4) {
+    border-top: 10px solid #ae0f8d; }
+  .nav-item:nth-child(5) {
+    border-top: 10px solid #6d0fae; }
+  .nav-item:nth-child(6) {
+    border-top: 10px solid #33227a; }
+  .nav-item:last-child {
+    border-top: 10px solid #0c8fcc; }
+
+.nav-link {
+  display: block;
+  font-family: 'MyriadProRegular';
+  font-size: 15px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  text-align: center; }
+
+.header-top {
+  height: 50px;
+  background: #000; }
+  .header-top a {
+    font-size: 14px;
+    line-height: 50px; }
+
+.header-search {
+  width: 210px;
+  background: #000;
+  border: 1px solid #434a50;
+  padding-left: 10px;
+  margin-top: 8px; }
+
+.header-bottom {
+  height: 70px;
+  background: #7f7f7f; }
+  .header-bottom .col-md-9 {
+    padding: 0; }
+
+.header-logo {
+  display: block;
+  width: 132px;
+  height: 72px;
+  background: url("../img/logo.jpg") no-repeat center center; }
+
+.page-footer {
+  min-height: 640px;
+  background: #1f2a32; }
+  .page-footer .col-md-3 {
+    padding: 0; }
+  .page-footer span {
+    color: #6a7782; }
+
+.footer-top .col-md-3:first-child {
+  border-top: 15px solid #7827a9; }
+.footer-top .col-md-3:nth-child(2) {
+  border-top: 15px solid #0c8fcc; }
+.footer-top .col-md-3:nth-child(3) {
+  border-top: 15px solid #de1c5c; }
+.footer-top .col-md-3:last-child {
+  border-top: 15px solid #ffae00; }
+
+.footer__title {
+  font-size: 24px;
+  color: #fff;
+  padding: 60px 0 40px 0; }
+
+.social .footer__text {
+  padding-left: 60px;
+  line-height: 50px; }
+
+.footer__text {
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  padding-left: 25px;
+  padding-right: 5px;
+  margin-bottom: 10px; }
+  .footer__text-green {
+    color: #0a948b;
+    margin-bottom: 20px;
+    line-height: 30px; }
+
+.flag {
+  background: url("../img/icons/flag.jpg") no-repeat left top; }
+
+.phone {
+  background: url("../img/icons/phone.jpg") no-repeat left top; }
+
+.message {
+  background: url("../img/icons/message.jpg") no-repeat left top; }
+
+.bird {
+  background: url("../img/icons/bird.jpg") no-repeat left top; }
+
+.facebook {
+  background: url("../img/facebook.jpg") no-repeat left center; }
+
+.twitter {
+  background: url("../img/twitter.jpg") no-repeat left center; }
+
+.youtube {
+  background: url("../img/youtube.jpg") no-repeat left center; }
+
+.instagram {
+  background: url("../img/instagram.jpg") no-repeat left center; }
+
+.repin {
+  background: url("../img/repin.jpg") no-repeat left center; }
+
+/*# sourceMappingURL=style.css.map */
